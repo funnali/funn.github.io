@@ -1,0 +1,117 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid #afafaf93;
+
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    margin: auto;
+    height: 80px;
+
+}
+header nav .logo{
+    color: #08d665;
+    font-size: 30px;
+    font-weight: bolder;
+
+}
+header nav .logo span{
+    color: #08d665;
+}
+header nav .links{
+    display: flex;
+}
+header nav .links li{
+    position: relative;
+    margin: 0 25px;
+    height: 80px;
+    line-height: 80px;
+    list-style: none;
+}
+header nav .links li::after{
+    position: absolute; 
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #08d665;
+    transition: 0.3s;
+}
+header nav .links li:hover::after,
+header nav .links li.active::after{
+    width: 100%;
+}
+header nav .links li a{
+    color: #c8c6c6;
+    font-size: 17px;
+}
+.hero-sec{
+    height: 100vh;
+    background: url(../portifolio/assets/l.jpg);
+    background-size: cover;
+    background-position: top;
+    overflow: hidden;
+}
+.hero-sec .container{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    height: 100%;
+}
+.hero-sec .container .div-text{
+    width: 50%;
+}
+.hero-sec .container .div-text h1{
+    color:#fff;
+    font-size: 70px;
+    margin-bottom: 10px;
+}
+.hero-sec .container .div-text span{
+    font-size: 20px;
+    color: #08d665;
+}
+.hero-sec .container.div-text p{
+    color: #a84d4d;
+    font-size: 20px;
+    margin: 10px o 50px;
+    line-height: 1.7;
+
+}
+.hero-sec .container .div-text .btn{
+    color: #fff;
+    border: 1px solid #08d665;
+    background-color: #08d665;
+    padding: 5px 40px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.hero-sec .container .div-text .btn:hover{
+    background: transparent;
+}
+.hero-sec .container.div-img{
+    width: 35%;
+    position: absolute;
+    bottom: -10px;
+    right: 0;
+}
+.hero-sec .container.div-img img{
+    width: 100%;
+}
